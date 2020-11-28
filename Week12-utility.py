@@ -17,3 +17,14 @@ def update_string(string_1,string_2,index):
     new_string+=string_2
     new_string+= string_1[(index+1):]
     print(new_string)
+
+
+
+def find_word_count(list_given,string):
+    count=0
+    for i in range(0,len(list_given)):
+       single_list= list_given[i].split()
+       for k in range(0,len(single_list)):
+           if single_list[k]==string:
+               count+=1
+    return count
