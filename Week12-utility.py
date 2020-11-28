@@ -28,3 +28,22 @@ def find_word_count(list_given,string):
            if single_list[k]==string:
                count+=1
     return count
+
+
+def score_finder(list_1,list_2,string):
+    check_string= string.lower()
+    check_list=[]
+    for i in range(0,len(list_1)):
+        lower=list_1[i].lower()
+        check_list.append(lower)
+    if check_string in check_list:
+        index= check_list.index(check_string)
+        print(f'OUTPUT {list_1[index]} got a score of {list_2[index]}')
+    else:
+        print('OUTPUT player not found')
+
+
+
+
+
+
