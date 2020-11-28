@@ -69,6 +69,14 @@ def intersect(list_1,list_2):
     return final_list
 
 
+def not_in(list_1,list_2):
+    final_list=[]
+    for i in range(0,len(list_1)):
+        if list_1[i] not in list_2:
+            final_list.append(list_1[i])
+    return final_list
+    
+
 
 
 
