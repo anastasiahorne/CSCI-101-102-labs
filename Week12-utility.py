@@ -43,6 +43,17 @@ def score_finder(list_1,list_2,string):
         print('OUTPUT player not found')
 
 
+def union(list_1,list_2):
+    final_list= list_1+list_2
+    i=0
+    k=len(final_list)
+    while i <k:
+        if final_list.count(final_list[i])>1:
+            final_list.remove(final_list[i])
+            k-=1
+        i+=1
+    return final_list
+
 
 
 
