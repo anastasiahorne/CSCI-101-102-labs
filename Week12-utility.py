@@ -16,7 +16,7 @@ def update_string(string_1,string_2,index):
     new_string= string_1[0:index]
     new_string+=string_2
     new_string+= string_1[(index+1):]
-    print(new_string)
+    print('OUTPUT',new_string)
 
 
 
@@ -52,6 +52,20 @@ def union(list_1,list_2):
             final_list.remove(final_list[i])
             k-=1
         i+=1
+    return final_list
+
+
+def intersect(list_1,list_2):
+    final_list=[]
+    if len(list_1)>len(list_2):
+        act_list= list_1
+        non_list= list_2
+    else:
+        act_list= list_2
+        non_list=list_1
+    for i in range(0,len(act_list)):
+        if act_list[i] in non_list:
+            final_list.append(act_list[i])
     return final_list
 
 
