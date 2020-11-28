@@ -1,4 +1,0 @@
-Hello there
-I am a test file 
-please load me in and print me out 
-Thanks
