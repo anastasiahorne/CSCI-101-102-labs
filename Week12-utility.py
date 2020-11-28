@@ -2,7 +2,7 @@
 #CSCI 102 – Section G
 #Week 12 - Utility using Git and Incremental Development
 #References: None
-#Time:  minutes
+#Time: 180 minutes
 
 def load_file(file_name):
     file=open(file_name,'r')
@@ -75,6 +75,23 @@ def not_in(list_1,list_2):
         if list_1[i] not in list_2:
             final_list.append(list_1[i])
     return final_list
+
+def is_prime(integer):
+    x=integer
+    check=0
+    if x<=1:
+        return False
+    elif x==2 or x==3:
+        return True
+    else:
+        for i in range(2,((x//2)+1)):
+            if (x%i)==0:
+                return False
+                break
+            else:
+                check+=1
+        if check==((x//2)-1):
+            return True
     
 
 
